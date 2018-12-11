@@ -8,7 +8,7 @@ namespace UniCraft.HealthMechanism
     /// </summary>
     [AddComponentMenu("UniCraft/HealthSystem")]
     [DisallowMultipleComponent]
-    public class HealthSystem : MonoBehaviour, IDamageable, IHealable
+    public class HealthSystem : MonoBehaviour
     {
         ///////////////////////////////
         ////////// Attribute //////////
@@ -17,8 +17,8 @@ namespace UniCraft.HealthMechanism
         /////////////////////////////////////
         ////////// Default Setting //////////
 
-        protected const int DeathHealth = 0;
-        protected const int MaxHealthLimit = 999;
+        public const int DeathHealth = 0;
+        public const int MaxHealthLimit = 999;
         
         /////////////////////////////////
         ////////// Information //////////
