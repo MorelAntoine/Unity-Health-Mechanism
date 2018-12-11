@@ -23,20 +23,17 @@ namespace UniCraft.HealthMechanism
         /////////////////////////////////
         ////////// Information //////////
         
-        [Header("Information")]
-        [SerializeField, Range(DeathHealth, MaxHealthLimit)] protected int Health = 80;
-        [SerializeField, Range(DeathHealth, MaxHealthLimit)] protected int MaxHealth = 100;
+        [SerializeField] protected int MaxHealth = 100;
+        [SerializeField] protected int Health = 80;
 
         /////////////////////////////////
         ////////// Unity Event //////////
 
-        [Header("Damage Event")]
-        [SerializeField] protected UnityEvent OnTakeDamageEvents;
-        [SerializeField] protected UnityEvent OnRecoverHealthEvents;
+        [SerializeField] protected UnityEvent OnTakeDamageEvents = null;
+        [SerializeField] protected UnityEvent OnRecoverHealthEvents = null;
         
-        [Header("Life Event")]
-        [SerializeField] protected UnityEvent OnDeathEvents;
-        [SerializeField] protected UnityEvent OnResurrectionEvents;
+        [SerializeField] protected UnityEvent OnDeathEvents = null;
+        [SerializeField] protected UnityEvent OnResurrectionEvents = null;
 
         //////////////////////////////
         ////////// Property //////////
